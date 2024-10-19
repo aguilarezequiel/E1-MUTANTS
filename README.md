@@ -21,56 +21,76 @@
 
 ## Ejemplos
 Mutante
-A	A	A	A
-C	C	C	C
-T	C	A	G
-G	G	T	C
+String[] dnaMutant1 = {
+    "AAAA", // Secuencia horizontal de A's
+    "CCCC", // Secuencia horizontal de C's
+    "TCAG",
+    "GGTC"
+};
+
 
 No Mutante
-A	A	A	T
-A	A	C	C
-A	A	A	C
-C	G	G	G
+String[] dnaNoMutant1 = {
+    "AAAT",
+    "AACC",
+    "AAAC",
+    "CGGG"
+};
+
 
 Mutante
-T	G	A	C
-A	G	C	C
-T	G	A	C
-G	G	T	C
+String[] dnaMutant2 = {
+    "TGAC",
+    "AGCC",
+    "TGAC",
+    "GGTC"  
+};
+
 
 Mutante
-A	A	A	A
-A	A	A	A
-A	A	A	A
-A	A	A	A
+String[] dnaNoMutant2 = {
+    "AAAA",
+    "AAAA",
+    "AAAA",
+    "AAAA"  
+};
+
 
 No Mutante
-T	G	A	C
-A	T	C	C
-T	A	A	G
-G	G	T	C
-
-Mutante
-T	C	G	G	G	T	G	A	T
-T	G	A	T	C	C	T	T	T
-T	A	C	G	A	G	T	G	A
-A	A	A	T	G	T	A	C	G
-A	C	G	A	G	T	G	C	T
-A	G	A	C	A	C	A	T	G
-G	A	A	T	T	C	C	A	A
-A	C	T	A	C	G	A	C	C
-T	G	A	G	T	A	T	C	C
+String[] dnaNoMutant3 = {
+    "TGAC",
+    "ATCC",
+    "TAAG",
+    "GGTC"  
+};
 
 
 Mutante
-T	T	T	T	T	T	T	T	T
-T	T	T	T	T	T	T	T	T
-T	T	T	T	T	T	T	T	T
-T	T	T	T	T	T	T	T	T
-C	C	G	A	C	C	A	G	T
-G	G	C	A	C	T	C	C	A
-A	G	G	A	C	A	C	T	A
-C	A	A	A	G	G	C	A	T
-G	C	A	G	T	C	C	C	C
+String[] dnaMutant3 = {
+    "TCGGTGATA", 
+    "TGATCCTTT", 
+    "TACGAGTGA", 
+    "AAATGTACT", 
+    "ACGAGTGCT", 
+    "AGACACTAG", 
+    "GAACTCCAA", 
+    "ACTACGACC", 
+    "TGAGTATCC"
+};
+
+
+
+Mutante
+String[] dnaMutant4 = {
+    "TTTTTTTTT", // Secuencia horizontal de T's
+    "TTTTTTTTT", 
+    "TTTTTTTTT", 
+    "TTTTTTTTT", 
+    "CCGACCATG", 
+    "GGCACTCCA", 
+    "AGGACACTA", 
+    "CAAAGGCAT", 
+    "GCAGTCCCC"  // Secuencia vertical de C's
+};
 
 
