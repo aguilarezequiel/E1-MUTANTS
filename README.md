@@ -11,13 +11,13 @@
 
 ## Manejo de Errores
 1.	Manejo de errores:
-a.	Recibir un array vacío
-b.	Recibir un array de NxM en vez de un NxN
-c.	Recibir un array de números (entre comillas para que sean string)
-d.	Recibir null
-e.	Recibir un array de NxN de nulls
-f.	Recibir un array de NxN con letras distintas a las propuestas {“B”,”H”}
-2.	Manejo de casos factibles:
+	a.	Recibir un array vacío
+	b.	Recibir un array de NxM en vez de un NxN
+	c.	Recibir un array de números (entre comillas para que sean string)
+	d.	Recibir null
+	e.	Recibir un array de NxN de nulls
+	f.	Recibir un array de NxN con letras distintas a las propuestas {“B”,”H”}
+
 
 ## Ejemplos
 Mutante
