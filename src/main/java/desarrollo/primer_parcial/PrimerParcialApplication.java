@@ -1,5 +1,6 @@
 package desarrollo.primer_parcial;
 
+import desarrollo.primer_parcial.entities.Humano;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,3 +12,5 @@ public class PrimerParcialApplication {
 		SpringApplication.run(PrimerParcialApplication.class, args);
 	}
 }
+
+

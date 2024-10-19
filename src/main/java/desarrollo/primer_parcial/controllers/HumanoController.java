@@ -20,11 +20,19 @@ public class HumanoController {
     private HumanoService humanoService;
 
     @PostMapping("")
-    public ResponseEntity<String> checkMutant(@RequestBody HumanoDTO humanoDTO) throws Exception {
-        boolean isMutant = humanoService.isMutant(humanoDTO);
-        return isMutant
-                ? ResponseEntity.status(HttpStatus.OK).body("Mutant detected.")
-                : ResponseEntity.status(HttpStatus.FORBIDDEN).body("Not a mutant.");
+    public ResponseEntity<String> checkMutant(@RequestBody HumanoDTO humanoDTO) {
+        try {
+            boolean isMutant = humanoService.isMutant(humanoDTO);
+            return isMutant
+                    ? ResponseEntity.status(HttpStatus.OK).body("Mutant detected.")
+                    : ResponseEntity.status(HttpStatus.FORBIDDEN).body("Not a mutant.");
+        } catch (IllegalArgumentException e) {
+            // Devuelve un 400 si ocurre una excepción de validación
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        } catch (Exception e) {
+            // En caso de errores inesperados, devuelve un 500
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred.");
+        }
     }
 
     @GetMapping("")
