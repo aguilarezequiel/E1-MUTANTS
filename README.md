@@ -1,15 +1,15 @@
-#URL raíz de la API: https://e1-mutants.onrender.com
+# URL raíz de la API: https://e1-mutants.onrender.com
 
 
-##Para utilizar la API del proyecto:
-	###1- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant en cualquier navegador para obtener todos los registros cargados
-	###2- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant/stats para obtener el servicio del ratio de mutantes sobre personas escaneadas
-	###3- POST - https://e1-mutants.onrender.com/api/v1/humano/mutant (Utilizando POSTMAN y enviando algún ejemplo similar a los de abajo en el BODY) 
+## Para utilizar la API del proyecto:
+	### 1- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant en cualquier navegador para obtener todos los registros cargados
+	### 2- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant/stats para obtener el servicio del ratio de mutantes sobre personas escaneadas
+	### 3- POST - https://e1-mutants.onrender.com/api/v1/humano/mutant (Utilizando POSTMAN y enviando algún ejemplo similar a los de abajo en el BODY) 
 
 
-#Pruebas Unitarias
+# Pruebas Unitarias
 
-##Manejo de Errores
+## Manejo de Errores
 1.	Manejo de errores:
 a.	Recibir un array vacío
 b.	Recibir un array de NxM en vez de un NxN
@@ -19,7 +19,7 @@ e.	Recibir un array de NxN de nulls
 f.	Recibir un array de NxN con letras distintas a las propuestas {“B”,”H”}
 2.	Manejo de casos factibles:
 
-##Ejemplos
+## Ejemplos
 Mutante
 A	A	A	A
 C	C	C	C
