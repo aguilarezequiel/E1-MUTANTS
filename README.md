@@ -1,71 +1,43 @@
-# URL raíz de la API: https://e1-mutants.onrender.com
+🧬 Mutant Detection API
+🌐 URL raíz de la API: https://e1-mutants.onrender.com
 
+🚀 Cómo utilizar la API:
+GET - Obtener todos los registros cargados
+https://e1-mutants.onrender.com/api/v1/humano/mutant
 
-## Para utilizar la API del proyecto:
-	 1- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant en cualquier navegador para obtener todos los registros cargados
-	 2- GET  - https://e1-mutants.onrender.com/api/v1/humano/mutant/stats para obtener el servicio del ratio de mutantes sobre personas escaneadas
-	 3- POST - https://e1-mutants.onrender.com/api/v1/humano/mutant (Utilizando POSTMAN y enviando algún ejemplo similar a los de abajo en el BODY) 
+GET - Obtener estadísticas de mutantes
+https://e1-mutants.onrender.com/api/v1/humano/mutant/stats
 
+POST - Enviar ADN para validación de mutante
+https://e1-mutants.onrender.com/api/v1/humano/mutant
 
-# Pruebas Unitarias
-
-## Manejo de Errores
-1.	Manejo de errores:
-	a.	Recibir un array vacío
-	b.	Recibir un array de NxM en vez de un NxN
-	c.	Recibir un array de números (entre comillas para que sean string)
-	d.	Recibir null
-	e.	Recibir un array de NxN de nulls
-	f.	Recibir un array de NxN con letras distintas a las propuestas {“B”,”H”}
-
-
-## Ejemplos
-Mutante
+Usa Postman y envía un ejemplo como los de abajo en el BODY.
+🧪 Pruebas Unitarias
+⚠️ Manejo de Errores
+Manejo de errores:
+⛔ Array vacío
+🔄 Array de dimensiones NxM en lugar de NxN
+🔢 Array de números (con comillas para que sean strings)
+❌ Array nulo
+🚫 Array NxN de valores nulos
+🅱️ Letras no válidas (debe contener solo: "A", "T", "C", "G")
+📋 Ejemplos de ADN
+🧬 Ejemplos de Mutantes
+Mutante 1
 String[] dnaMutant1 = {
     "AAAA", // Secuencia horizontal de A's
     "CCCC", // Secuencia horizontal de C's
     "TCAG",
     "GGTC"
 };
-
-
-No Mutante
-String[] dnaNoMutant1 = {
-    "AAAT",
-    "AACC",
-    "AAAC",
-    "CGGG"
-};
-
-
-Mutante
+Mutante 2
 String[] dnaMutant2 = {
     "TGAC",
     "AGCC",
     "TGAC",
-    "GGTC"  
+    "GGTC"
 };
-
-
-Mutante
-String[] dnaNoMutant2 = {
-    "AAAA",
-    "AAAA",
-    "AAAA",
-    "AAAA"  
-};
-
-
-No Mutante
-String[] dnaNoMutant3 = {
-    "TGAC",
-    "ATCC",
-    "TAAG",
-    "GGTC"  
-};
-
-
-Mutante
+Mutante 3
 String[] dnaMutant3 = {
     "TCGGTGATA", 
     "TGATCCTTT", 
@@ -77,10 +49,7 @@ String[] dnaMutant3 = {
     "ACTACGACC", 
     "TGAGTATCC"
 };
-
-
-
-Mutante
+Mutante 4
 String[] dnaMutant4 = {
     "TTTTTTTTT", // Secuencia horizontal de T's
     "TTTTTTTTT", 
@@ -92,5 +61,25 @@ String[] dnaMutant4 = {
     "CAAAGGCAT", 
     "GCAGTCCCC"  // Secuencia vertical de C's
 };
-
-
+❌ Ejemplos de No Mutantes
+No Mutante 1
+String[] dnaNoMutant1 = {
+    "AAAT",
+    "AACC",
+    "AAAC",
+    "CGGG"
+};
+No Mutante 2
+String[] dnaNoMutant2 = {
+    "AAAA",
+    "AAAA",
+    "AAAA",
+    "AAAA"
+};
+No Mutante 3
+String[] dnaNoMutant3 = {
+    "TGAC",
+    "ATCC",
+    "TAAG",
+    "GGTC"
+};
