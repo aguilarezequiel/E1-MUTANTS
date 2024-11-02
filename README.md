@@ -75,14 +75,7 @@
     "CAAAGGCAT", 
     "GCAGTCCCC"  // Secuencia vertical de C's
   };
-- **Mutante 5**  
-  ```java
-  String[] dnaNoMutant5 = {
-    "AAAA",
-    "AAAA",
-    "AAAA",
-    "AAAA"
-  };
+
 ### ❌ Ejemplos de No Mutantes
 - **Mutante 2**  
   ```java
@@ -95,6 +88,14 @@
 - **Mutante 2**  
   ```java
   String[] dnaNoMutant2 = {
+    "AAAA",
+    "AAAA",
+    "AAAA",
+    "AAAA"
+  };
+- **Mutante 2**  
+  ```java
+  String[] dnaNoMutant3 = {
     "TGAC",
     "ATCC",
     "TAAG",
