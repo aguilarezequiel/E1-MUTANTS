@@ -75,9 +75,9 @@
     "CAAAGGCAT", 
     "GCAGTCCCC"  // Secuencia vertical de C's
   };
-- **Mutante 2**  
+- **Mutante 5**  
   ```java
-  String[] dnaNoMutant2 = {
+  String[] dnaNoMutant5 = {
     "AAAA",
     "AAAA",
     "AAAA",
@@ -94,7 +94,7 @@
   };
 - **Mutante 2**  
   ```java
-  String[] dnaNoMutant3 = {
+  String[] dnaNoMutant2 = {
     "TGAC",
     "ATCC",
     "TAAG",
